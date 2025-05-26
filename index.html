@@ -68,6 +68,27 @@
     margin: 2rem 0;
   }
 }
+/* Mobiel: 2 kolommen voor status-opties + geen horizontaal scrollen */
+@media (max-width: 600px) {
+  /* Zorg dat de pagina niet horizontaal doorscrollt */
+  body, html {
+    overflow-x: hidden;
+  }
+
+  /* Status bezoek: 2 kolommen ipv 4 */
+  .status-options {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 0.5rem !important;
+  }
+
+  /* Ieder blokje iets touch-vriendelijker */
+  .status-option {
+    padding: 0.75rem !important;
+    font-size: 0.95rem !important;
+  }
+}
+
 
 
 
